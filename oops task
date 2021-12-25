@@ -1,0 +1,57 @@
+  OOPS CONCEPT TASK
+ -----------------------
+ 
+ CODE:
+ -------
+      class Person             //creating a class named function
+     {
+        
+         constructor(name)   
+          {
+              this.name=name
+          }
+         getname() 
+          {
+           return `I am ${this.name}`
+          }
+
+         greetings()              //creating Instance method greetings
+          {
+          
+          console.log("Welcome to Instance Method --- Greetings")
+          }
+
+        getfood()                   //creating instance method getfood
+         {
+          console.log("I would to like to eat Biryani ")
+         }
+
+        static displayWalk ()        //creating a static method displayWalk
+         {
+          console.log("I am Static method with name displayWalk ")
+         }
+
+     }
+     
+     let person1=new Person("Sreekanth")   //creating object reference person1 --constructor
+
+     let objref=new Person()    //creating object reference to call greetings method
+     
+     let food=new Person()    //creating object ref food to call getfood method
+    
+     console.log(person1.getname())
+      
+      objref.greetings()
+
+      food.getfood();
+      
+      Person.displayWalk()   //calling static method using class name-Person class
+      
+      
+    OUTPUT:  
+    ------
+    
+    I am Sreekanth
+Welcome to Instance Method --- Greetings
+I would to like to eat Biryani 
+I am Static method with name displayWalk 
